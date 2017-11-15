@@ -1,11 +1,14 @@
 /*
-Theme Name: Simple
+Theme Name: Simple-wp-theme
 Author: Adam Wo
 Description: Very simple theme
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+.clr{
+    clear: both;
+}
 body {
     margin: 0;
     padding: 0;
@@ -16,8 +19,12 @@ body {
     line-height: 1.7em;
     
 }
+a {
+    color: #333;
+    text-decoration: none;
+}
 header {
-    background: #393939;
+    background: #2f5084;
     color: #fff;
     padding: 20px 10px;
 }
@@ -34,10 +41,72 @@ header h1 {
 }
 .main {
     margin: 15px 0;
+    float: left;
+    width: 68%;
+}
+.sidebar {
+    float: right;
+    width: 28%;
+}
+.side-widget {
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.side-widget li {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    line-height: 2.2em;
+}
+.side-widget a {
+    text-decoration: none;
 }
 footer {
-    background: #393939;
+    background: #2f5084;
     color: #fff;
     padding: 20px 10px;
     text-align: center;
+}
+article.post{
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+article.post a.button {
+    display: inline-block;
+    color: #fff;
+    background: #2f5084;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+.meta {
+    background: #2f5084;
+    color: #fff;
+    padding: 5px;
+}
+.meta a {
+    color: antiquewhite;
+}
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+.main-nav {
+    background: #142238;
+    color: #fff;
+    padding: 5px;
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.main-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 15px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
 }
